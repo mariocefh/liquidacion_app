@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_tree_liqtax" model="ir.ui.view">
+            <field name="name">view.tree.liqtax</field>
+            <field name="model">mcliqtax</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="status"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_view_liqtax" model="ir.actions.act_window">
+            <field name="name">Listado de Importes</field>
+            <field name="res_model">mcliqtax</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_liqtax" parent="" action="action_view_liqtax"/>
+
+</odoo>
