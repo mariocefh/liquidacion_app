@@ -12,6 +12,22 @@
             </field>
         </record>
 
+        <record id="view_form_liqtax" model="ir.ui.view">
+            <field name="name">view.form.liqtax</field>
+            <field name="model">mcliqtax</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" string="Código"/>
+                            <field name="description" string="Descripción"/>
+                            <field name="status" string="Estado del Importe"/>
+                        </group>                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
         <record id="action_view_liqtax" model="ir.actions.act_window">
             <field name="name">Listado de Importes</field>
             <field name="res_model">mcliqtax</field>
